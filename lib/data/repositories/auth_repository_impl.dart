@@ -7,9 +7,7 @@ import 'package:fintech/data/remote/models/register_body.dart';
 import 'package:fintech/data/remote/models/register_model.dart';
 import 'package:fintech/domain/repositories/auth_repository.dart';
 import 'package:get/get.dart';
-import 'package:injectable/injectable.dart';
 
-@injectable
 class AuthRepositoryImpl implements AuthRepository {
   final RemoteDataSource _remoteDataSource;
 

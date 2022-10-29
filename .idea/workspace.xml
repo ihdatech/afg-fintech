@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6fa9f3c-edf5-4a53-bca4-6f9648f2b3bb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/auth/auth_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis_options.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis_options.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintech.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fintech.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/config/injection.config.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/config/injection.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/remote/data_sources/remote_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/remote/data_sources/remote_data_source.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/remote/data_sources/remote_dio.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/remote/data_sources/remote_dio.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/remote/models/login_queries.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/remote/models/login_queries.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/remote/models/login_queries.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/remote/models/login_queries.freezed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/remote/models/login_queries.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/remote/models/login_queries.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/repositories/auth_repository_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/repositories/auth_repository_impl.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/repositories/product_repository_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/repositories/product_repository_impl.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/domain/repositories/auth_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/repositories/auth_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/domain/repositories/product_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/repositories/product_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/domain/use_cases/get_login_usecases.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/use_cases/get_login_usecases.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/domain/use_cases/get_products_usecases.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/use_cases/get_products_usecases.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/domain/use_cases/is_auth_usecases.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/use_cases/is_auth_usecases.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/domain/use_cases/post_register_usecases.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/use_cases/post_register_usecases.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/get_login/get_login_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_login/get_login_cubit.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/get_login/get_login_cubit.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_login/get_login_cubit.freezed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/get_login/get_login_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_login/get_login_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/get_products/get_products_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_products/get_products_cubit.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/get_products/get_products_cubit.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_products/get_products_cubit.freezed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/get_products/get_products_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_products/get_products_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/is_auth/is_auth_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/auth/auth_cubit.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/is_auth/is_auth_cubit.freezed.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/is_auth/is_auth_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/login_queries/login_queries_cubit.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/login_queries/login_queries_cubit.freezed.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/login_queries/login_queries_state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/post_register/post_register_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/post_register/post_register_cubit.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/post_register/post_register_cubit.freezed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/post_register/post_register_cubit.freezed.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/cubits/post_register/post_register_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/post_register/post_register_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/gen/assets.gen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/pages/main_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/widget_test.dart" afterDir="false" />
     </list>
@@ -17,6 +58,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,10 +98,23 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fintech-old" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../flutter-getx-clean-architecture" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\.github\ihdatech\afg-fintech\lib\presentation\cubits" />
+      <recent name="C:\.github\ihdatech\afg-fintech\lib\presentation\pages" />
+      <recent name="C:\.github\ihdatech\afg-fintech\lib\presentation\widgets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\.github\ihdatech\afg-fintech\lib\presentation\manager\cubit\validate_login" />
+      <recent name="C:\.github\ihdatech\afg-fintech\lib\presentation\manager\cubit\get_products" />
+      <recent name="C:\.github\ihdatech\afg-fintech\lib\presentation\manager\cubit\get_login" />
+      <recent name="C:\.github\ihdatech\afg-fintech\lib\config" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,5 +143,34 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/domain/use_cases/get_login_usecases.dart</url>
+          <line>41</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/domain/use_cases/get_login_usecases.dart</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/domain/use_cases/get_login_usecases.dart</url>
+          <line>32</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/domain/use_cases/get_login_usecases.dart</url>
+          <line>49</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint suspend="THREAD" type="dart-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

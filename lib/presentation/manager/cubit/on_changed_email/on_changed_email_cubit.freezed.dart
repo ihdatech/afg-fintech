@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'login_queries_cubit.dart';
+part of 'on_changed_email_cubit.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,13 +15,13 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$LoginQueriesState {
+mixin _$OnChangedEmailState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String failure) failure,
-    required TResult Function(LoginQueries success) success,
+    required TResult Function(String success) success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -29,7 +29,7 @@ mixin _$LoginQueriesState {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String failure)? failure,
-    TResult? Function(LoginQueries success)? success,
+    TResult? Function(String success)? success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -37,7 +37,7 @@ mixin _$LoginQueriesState {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String failure)? failure,
-    TResult Function(LoginQueries success)? success,
+    TResult Function(String success)? success,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -69,16 +69,16 @@ mixin _$LoginQueriesState {
 }
 
 /// @nodoc
-abstract class $LoginQueriesStateCopyWith<$Res> {
-  factory $LoginQueriesStateCopyWith(
-          LoginQueriesState value, $Res Function(LoginQueriesState) then) =
-      _$LoginQueriesStateCopyWithImpl<$Res, LoginQueriesState>;
+abstract class $OnChangedEmailStateCopyWith<$Res> {
+  factory $OnChangedEmailStateCopyWith(
+          OnChangedEmailState value, $Res Function(OnChangedEmailState) then) =
+      _$OnChangedEmailStateCopyWithImpl<$Res, OnChangedEmailState>;
 }
 
 /// @nodoc
-class _$LoginQueriesStateCopyWithImpl<$Res, $Val extends LoginQueriesState>
-    implements $LoginQueriesStateCopyWith<$Res> {
-  _$LoginQueriesStateCopyWithImpl(this._value, this._then);
+class _$OnChangedEmailStateCopyWithImpl<$Res, $Val extends OnChangedEmailState>
+    implements $OnChangedEmailStateCopyWith<$Res> {
+  _$OnChangedEmailStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -95,7 +95,7 @@ abstract class _$$_InitialCopyWith<$Res> {
 
 /// @nodoc
 class __$$_InitialCopyWithImpl<$Res>
-    extends _$LoginQueriesStateCopyWithImpl<$Res, _$_Initial>
+    extends _$OnChangedEmailStateCopyWithImpl<$Res, _$_Initial>
     implements _$$_InitialCopyWith<$Res> {
   __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
       : super(_value, _then);
@@ -108,7 +108,7 @@ class _$_Initial implements _Initial {
 
   @override
   String toString() {
-    return 'LoginQueriesState.initial()';
+    return 'OnChangedEmailState.initial()';
   }
 
   @override
@@ -126,7 +126,7 @@ class _$_Initial implements _Initial {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String failure) failure,
-    required TResult Function(LoginQueries success) success,
+    required TResult Function(String success) success,
   }) {
     return initial();
   }
@@ -137,7 +137,7 @@ class _$_Initial implements _Initial {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String failure)? failure,
-    TResult? Function(LoginQueries success)? success,
+    TResult? Function(String success)? success,
   }) {
     return initial?.call();
   }
@@ -148,7 +148,7 @@ class _$_Initial implements _Initial {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String failure)? failure,
-    TResult Function(LoginQueries success)? success,
+    TResult Function(String success)? success,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -195,7 +195,7 @@ class _$_Initial implements _Initial {
   }
 }
 
-abstract class _Initial implements LoginQueriesState {
+abstract class _Initial implements OnChangedEmailState {
   const factory _Initial() = _$_Initial;
 }
 
@@ -208,7 +208,7 @@ abstract class _$$_LoadingCopyWith<$Res> {
 
 /// @nodoc
 class __$$_LoadingCopyWithImpl<$Res>
-    extends _$LoginQueriesStateCopyWithImpl<$Res, _$_Loading>
+    extends _$OnChangedEmailStateCopyWithImpl<$Res, _$_Loading>
     implements _$$_LoadingCopyWith<$Res> {
   __$$_LoadingCopyWithImpl(_$_Loading _value, $Res Function(_$_Loading) _then)
       : super(_value, _then);
@@ -221,7 +221,7 @@ class _$_Loading implements _Loading {
 
   @override
   String toString() {
-    return 'LoginQueriesState.loading()';
+    return 'OnChangedEmailState.loading()';
   }
 
   @override
@@ -239,7 +239,7 @@ class _$_Loading implements _Loading {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String failure) failure,
-    required TResult Function(LoginQueries success) success,
+    required TResult Function(String success) success,
   }) {
     return loading();
   }
@@ -250,7 +250,7 @@ class _$_Loading implements _Loading {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String failure)? failure,
-    TResult? Function(LoginQueries success)? success,
+    TResult? Function(String success)? success,
   }) {
     return loading?.call();
   }
@@ -261,7 +261,7 @@ class _$_Loading implements _Loading {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String failure)? failure,
-    TResult Function(LoginQueries success)? success,
+    TResult Function(String success)? success,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -308,7 +308,7 @@ class _$_Loading implements _Loading {
   }
 }
 
-abstract class _Loading implements LoginQueriesState {
+abstract class _Loading implements OnChangedEmailState {
   const factory _Loading() = _$_Loading;
 }
 
@@ -323,7 +323,7 @@ abstract class _$$_FailureCopyWith<$Res> {
 
 /// @nodoc
 class __$$_FailureCopyWithImpl<$Res>
-    extends _$LoginQueriesStateCopyWithImpl<$Res, _$_Failure>
+    extends _$OnChangedEmailStateCopyWithImpl<$Res, _$_Failure>
     implements _$$_FailureCopyWith<$Res> {
   __$$_FailureCopyWithImpl(_$_Failure _value, $Res Function(_$_Failure) _then)
       : super(_value, _then);
@@ -352,7 +352,7 @@ class _$_Failure implements _Failure {
 
   @override
   String toString() {
-    return 'LoginQueriesState.failure(failure: $failure)';
+    return 'OnChangedEmailState.failure(failure: $failure)';
   }
 
   @override
@@ -378,7 +378,7 @@ class _$_Failure implements _Failure {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String failure) failure,
-    required TResult Function(LoginQueries success) success,
+    required TResult Function(String success) success,
   }) {
     return failure(this.failure);
   }
@@ -389,7 +389,7 @@ class _$_Failure implements _Failure {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String failure)? failure,
-    TResult? Function(LoginQueries success)? success,
+    TResult? Function(String success)? success,
   }) {
     return failure?.call(this.failure);
   }
@@ -400,7 +400,7 @@ class _$_Failure implements _Failure {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String failure)? failure,
-    TResult Function(LoginQueries success)? success,
+    TResult Function(String success)? success,
     required TResult orElse(),
   }) {
     if (failure != null) {
@@ -447,7 +447,7 @@ class _$_Failure implements _Failure {
   }
 }
 
-abstract class _Failure implements LoginQueriesState {
+abstract class _Failure implements OnChangedEmailState {
   const factory _Failure(final String failure) = _$_Failure;
 
   String get failure;
@@ -462,14 +462,12 @@ abstract class _$$_SuccessCopyWith<$Res> {
           _$_Success value, $Res Function(_$_Success) then) =
       __$$_SuccessCopyWithImpl<$Res>;
   @useResult
-  $Res call({LoginQueries success});
-
-  $LoginQueriesCopyWith<$Res> get success;
+  $Res call({String success});
 }
 
 /// @nodoc
 class __$$_SuccessCopyWithImpl<$Res>
-    extends _$LoginQueriesStateCopyWithImpl<$Res, _$_Success>
+    extends _$OnChangedEmailStateCopyWithImpl<$Res, _$_Success>
     implements _$$_SuccessCopyWith<$Res> {
   __$$_SuccessCopyWithImpl(_$_Success _value, $Res Function(_$_Success) _then)
       : super(_value, _then);
@@ -483,16 +481,8 @@ class __$$_SuccessCopyWithImpl<$Res>
       null == success
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
-              as LoginQueries,
+              as String,
     ));
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $LoginQueriesCopyWith<$Res> get success {
-    return $LoginQueriesCopyWith<$Res>(_value.success, (value) {
-      return _then(_value.copyWith(success: value));
-    });
   }
 }
 
@@ -502,11 +492,11 @@ class _$_Success implements _Success {
   const _$_Success(this.success);
 
   @override
-  final LoginQueries success;
+  final String success;
 
   @override
   String toString() {
-    return 'LoginQueriesState.success(success: $success)';
+    return 'OnChangedEmailState.success(success: $success)';
   }
 
   @override
@@ -532,7 +522,7 @@ class _$_Success implements _Success {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String failure) failure,
-    required TResult Function(LoginQueries success) success,
+    required TResult Function(String success) success,
   }) {
     return success(this.success);
   }
@@ -543,7 +533,7 @@ class _$_Success implements _Success {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(String failure)? failure,
-    TResult? Function(LoginQueries success)? success,
+    TResult? Function(String success)? success,
   }) {
     return success?.call(this.success);
   }
@@ -554,7 +544,7 @@ class _$_Success implements _Success {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String failure)? failure,
-    TResult Function(LoginQueries success)? success,
+    TResult Function(String success)? success,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -601,10 +591,10 @@ class _$_Success implements _Success {
   }
 }
 
-abstract class _Success implements LoginQueriesState {
-  const factory _Success(final LoginQueries success) = _$_Success;
+abstract class _Success implements OnChangedEmailState {
+  const factory _Success(final String success) = _$_Success;
 
-  LoginQueries get success;
+  String get success;
   @JsonKey(ignore: true)
   _$$_SuccessCopyWith<_$_Success> get copyWith =>
       throw _privateConstructorUsedError;

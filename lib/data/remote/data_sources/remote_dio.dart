@@ -1,9 +1,7 @@
 import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:injectable/injectable.dart';
 
-@singleton
 class RemoteDio with DioMixin implements Dio {
   RemoteDio._([BaseOptions? options]) {
     options = BaseOptions(

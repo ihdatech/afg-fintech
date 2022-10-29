@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'is_auth_cubit.dart';
+part of 'validate_login_cubit.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,29 +15,29 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$IsAuthState {
+mixin _$ValidateLoginState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(String failure) failure,
-    required TResult Function(RxBool success) success,
+    required TResult Function() failure,
+    required TResult Function() success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(String failure)? failure,
-    TResult? Function(RxBool success)? success,
+    TResult? Function()? failure,
+    TResult? Function()? success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(String failure)? failure,
-    TResult Function(RxBool success)? success,
+    TResult Function()? failure,
+    TResult Function()? success,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -69,16 +69,16 @@ mixin _$IsAuthState {
 }
 
 /// @nodoc
-abstract class $IsAuthStateCopyWith<$Res> {
-  factory $IsAuthStateCopyWith(
-          IsAuthState value, $Res Function(IsAuthState) then) =
-      _$IsAuthStateCopyWithImpl<$Res, IsAuthState>;
+abstract class $ValidateLoginStateCopyWith<$Res> {
+  factory $ValidateLoginStateCopyWith(
+          ValidateLoginState value, $Res Function(ValidateLoginState) then) =
+      _$ValidateLoginStateCopyWithImpl<$Res, ValidateLoginState>;
 }
 
 /// @nodoc
-class _$IsAuthStateCopyWithImpl<$Res, $Val extends IsAuthState>
-    implements $IsAuthStateCopyWith<$Res> {
-  _$IsAuthStateCopyWithImpl(this._value, this._then);
+class _$ValidateLoginStateCopyWithImpl<$Res, $Val extends ValidateLoginState>
+    implements $ValidateLoginStateCopyWith<$Res> {
+  _$ValidateLoginStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -95,7 +95,7 @@ abstract class _$$_InitialCopyWith<$Res> {
 
 /// @nodoc
 class __$$_InitialCopyWithImpl<$Res>
-    extends _$IsAuthStateCopyWithImpl<$Res, _$_Initial>
+    extends _$ValidateLoginStateCopyWithImpl<$Res, _$_Initial>
     implements _$$_InitialCopyWith<$Res> {
   __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
       : super(_value, _then);
@@ -108,7 +108,7 @@ class _$_Initial implements _Initial {
 
   @override
   String toString() {
-    return 'IsAuthState.initial()';
+    return 'ValidateLoginState.initial()';
   }
 
   @override
@@ -125,8 +125,8 @@ class _$_Initial implements _Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(String failure) failure,
-    required TResult Function(RxBool success) success,
+    required TResult Function() failure,
+    required TResult Function() success,
   }) {
     return initial();
   }
@@ -136,8 +136,8 @@ class _$_Initial implements _Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(String failure)? failure,
-    TResult? Function(RxBool success)? success,
+    TResult? Function()? failure,
+    TResult? Function()? success,
   }) {
     return initial?.call();
   }
@@ -147,8 +147,8 @@ class _$_Initial implements _Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(String failure)? failure,
-    TResult Function(RxBool success)? success,
+    TResult Function()? failure,
+    TResult Function()? success,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -195,7 +195,7 @@ class _$_Initial implements _Initial {
   }
 }
 
-abstract class _Initial implements IsAuthState {
+abstract class _Initial implements ValidateLoginState {
   const factory _Initial() = _$_Initial;
 }
 
@@ -208,7 +208,7 @@ abstract class _$$_LoadingCopyWith<$Res> {
 
 /// @nodoc
 class __$$_LoadingCopyWithImpl<$Res>
-    extends _$IsAuthStateCopyWithImpl<$Res, _$_Loading>
+    extends _$ValidateLoginStateCopyWithImpl<$Res, _$_Loading>
     implements _$$_LoadingCopyWith<$Res> {
   __$$_LoadingCopyWithImpl(_$_Loading _value, $Res Function(_$_Loading) _then)
       : super(_value, _then);
@@ -221,7 +221,7 @@ class _$_Loading implements _Loading {
 
   @override
   String toString() {
-    return 'IsAuthState.loading()';
+    return 'ValidateLoginState.loading()';
   }
 
   @override
@@ -238,8 +238,8 @@ class _$_Loading implements _Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(String failure) failure,
-    required TResult Function(RxBool success) success,
+    required TResult Function() failure,
+    required TResult Function() success,
   }) {
     return loading();
   }
@@ -249,8 +249,8 @@ class _$_Loading implements _Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(String failure)? failure,
-    TResult? Function(RxBool success)? success,
+    TResult? Function()? failure,
+    TResult? Function()? success,
   }) {
     return loading?.call();
   }
@@ -260,8 +260,8 @@ class _$_Loading implements _Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(String failure)? failure,
-    TResult Function(RxBool success)? success,
+    TResult Function()? failure,
+    TResult Function()? success,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -308,7 +308,7 @@ class _$_Loading implements _Loading {
   }
 }
 
-abstract class _Loading implements IsAuthState {
+abstract class _Loading implements ValidateLoginState {
   const factory _Loading() = _$_Loading;
 }
 
@@ -317,70 +317,44 @@ abstract class _$$_FailureCopyWith<$Res> {
   factory _$$_FailureCopyWith(
           _$_Failure value, $Res Function(_$_Failure) then) =
       __$$_FailureCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String failure});
 }
 
 /// @nodoc
 class __$$_FailureCopyWithImpl<$Res>
-    extends _$IsAuthStateCopyWithImpl<$Res, _$_Failure>
+    extends _$ValidateLoginStateCopyWithImpl<$Res, _$_Failure>
     implements _$$_FailureCopyWith<$Res> {
   __$$_FailureCopyWithImpl(_$_Failure _value, $Res Function(_$_Failure) _then)
       : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? failure = null,
-  }) {
-    return _then(_$_Failure(
-      null == failure
-          ? _value.failure
-          : failure // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
 }
 
 /// @nodoc
 
 class _$_Failure implements _Failure {
-  const _$_Failure(this.failure);
-
-  @override
-  final String failure;
+  const _$_Failure();
 
   @override
   String toString() {
-    return 'IsAuthState.failure(failure: $failure)';
+    return 'ValidateLoginState.failure()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Failure &&
-            (identical(other.failure, failure) || other.failure == failure));
+        (other.runtimeType == runtimeType && other is _$_Failure);
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, failure);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_FailureCopyWith<_$_Failure> get copyWith =>
-      __$$_FailureCopyWithImpl<_$_Failure>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(String failure) failure,
-    required TResult Function(RxBool success) success,
+    required TResult Function() failure,
+    required TResult Function() success,
   }) {
-    return failure(this.failure);
+    return failure();
   }
 
   @override
@@ -388,10 +362,10 @@ class _$_Failure implements _Failure {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(String failure)? failure,
-    TResult? Function(RxBool success)? success,
+    TResult? Function()? failure,
+    TResult? Function()? success,
   }) {
-    return failure?.call(this.failure);
+    return failure?.call();
   }
 
   @override
@@ -399,12 +373,12 @@ class _$_Failure implements _Failure {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(String failure)? failure,
-    TResult Function(RxBool success)? success,
+    TResult Function()? failure,
+    TResult Function()? success,
     required TResult orElse(),
   }) {
     if (failure != null) {
-      return failure(this.failure);
+      return failure();
     }
     return orElse();
   }
@@ -447,13 +421,8 @@ class _$_Failure implements _Failure {
   }
 }
 
-abstract class _Failure implements IsAuthState {
-  const factory _Failure(final String failure) = _$_Failure;
-
-  String get failure;
-  @JsonKey(ignore: true)
-  _$$_FailureCopyWith<_$_Failure> get copyWith =>
-      throw _privateConstructorUsedError;
+abstract class _Failure implements ValidateLoginState {
+  const factory _Failure() = _$_Failure;
 }
 
 /// @nodoc
@@ -461,70 +430,44 @@ abstract class _$$_SuccessCopyWith<$Res> {
   factory _$$_SuccessCopyWith(
           _$_Success value, $Res Function(_$_Success) then) =
       __$$_SuccessCopyWithImpl<$Res>;
-  @useResult
-  $Res call({RxBool success});
 }
 
 /// @nodoc
 class __$$_SuccessCopyWithImpl<$Res>
-    extends _$IsAuthStateCopyWithImpl<$Res, _$_Success>
+    extends _$ValidateLoginStateCopyWithImpl<$Res, _$_Success>
     implements _$$_SuccessCopyWith<$Res> {
   __$$_SuccessCopyWithImpl(_$_Success _value, $Res Function(_$_Success) _then)
       : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? success = null,
-  }) {
-    return _then(_$_Success(
-      null == success
-          ? _value.success
-          : success // ignore: cast_nullable_to_non_nullable
-              as RxBool,
-    ));
-  }
 }
 
 /// @nodoc
 
 class _$_Success implements _Success {
-  const _$_Success(this.success);
-
-  @override
-  final RxBool success;
+  const _$_Success();
 
   @override
   String toString() {
-    return 'IsAuthState.success(success: $success)';
+    return 'ValidateLoginState.success()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Success &&
-            (identical(other.success, success) || other.success == success));
+        (other.runtimeType == runtimeType && other is _$_Success);
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, success);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_SuccessCopyWith<_$_Success> get copyWith =>
-      __$$_SuccessCopyWithImpl<_$_Success>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(String failure) failure,
-    required TResult Function(RxBool success) success,
+    required TResult Function() failure,
+    required TResult Function() success,
   }) {
-    return success(this.success);
+    return success();
   }
 
   @override
@@ -532,10 +475,10 @@ class _$_Success implements _Success {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(String failure)? failure,
-    TResult? Function(RxBool success)? success,
+    TResult? Function()? failure,
+    TResult? Function()? success,
   }) {
-    return success?.call(this.success);
+    return success?.call();
   }
 
   @override
@@ -543,12 +486,12 @@ class _$_Success implements _Success {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(String failure)? failure,
-    TResult Function(RxBool success)? success,
+    TResult Function()? failure,
+    TResult Function()? success,
     required TResult orElse(),
   }) {
     if (success != null) {
-      return success(this.success);
+      return success();
     }
     return orElse();
   }
@@ -591,11 +534,6 @@ class _$_Success implements _Success {
   }
 }
 
-abstract class _Success implements IsAuthState {
-  const factory _Success(final RxBool success) = _$_Success;
-
-  RxBool get success;
-  @JsonKey(ignore: true)
-  _$$_SuccessCopyWith<_$_Success> get copyWith =>
-      throw _privateConstructorUsedError;
+abstract class _Success implements ValidateLoginState {
+  const factory _Success() = _$_Success;
 }

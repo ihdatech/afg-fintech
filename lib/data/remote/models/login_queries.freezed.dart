@@ -20,8 +20,8 @@ LoginQueries _$LoginQueriesFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$LoginQueries {
-  String get email => throw _privateConstructorUsedError;
-  String get password => throw _privateConstructorUsedError;
+  String? get email => throw _privateConstructorUsedError;
+  String? get password => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -35,7 +35,7 @@ abstract class $LoginQueriesCopyWith<$Res> {
           LoginQueries value, $Res Function(LoginQueries) then) =
       _$LoginQueriesCopyWithImpl<$Res, LoginQueries>;
   @useResult
-  $Res call({String email, String password});
+  $Res call({String? email, String? password});
 }
 
 /// @nodoc
@@ -51,18 +51,18 @@ class _$LoginQueriesCopyWithImpl<$Res, $Val extends LoginQueries>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? email = null,
-    Object? password = null,
+    Object? email = freezed,
+    Object? password = freezed,
   }) {
     return _then(_value.copyWith(
-      email: null == email
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
-              as String,
-      password: null == password
+              as String?,
+      password: freezed == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ) as $Val);
   }
 }
@@ -75,7 +75,7 @@ abstract class _$$_LoginQueriesCopyWith<$Res>
       __$$_LoginQueriesCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String email, String password});
+  $Res call({String? email, String? password});
 }
 
 /// @nodoc
@@ -89,18 +89,18 @@ class __$$_LoginQueriesCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? email = null,
-    Object? password = null,
+    Object? email = freezed,
+    Object? password = freezed,
   }) {
     return _then(_$_LoginQueries(
-      email: null == email
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
-              as String,
-      password: null == password
+              as String?,
+      password: freezed == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -108,15 +108,15 @@ class __$$_LoginQueriesCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_LoginQueries implements _LoginQueries {
-  _$_LoginQueries({required this.email, required this.password});
+  _$_LoginQueries({this.email, this.password});
 
   factory _$_LoginQueries.fromJson(Map<String, dynamic> json) =>
       _$$_LoginQueriesFromJson(json);
 
   @override
-  final String email;
+  final String? email;
   @override
-  final String password;
+  final String? password;
 
   @override
   String toString() {
@@ -152,17 +152,16 @@ class _$_LoginQueries implements _LoginQueries {
 }
 
 abstract class _LoginQueries implements LoginQueries {
-  factory _LoginQueries(
-      {required final String email,
-      required final String password}) = _$_LoginQueries;
+  factory _LoginQueries({final String? email, final String? password}) =
+      _$_LoginQueries;
 
   factory _LoginQueries.fromJson(Map<String, dynamic> json) =
       _$_LoginQueries.fromJson;
 
   @override
-  String get email;
+  String? get email;
   @override
-  String get password;
+  String? get password;
   @override
   @JsonKey(ignore: true)
   _$$_LoginQueriesCopyWith<_$_LoginQueries> get copyWith =>

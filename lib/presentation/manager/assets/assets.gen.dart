@@ -21,6 +21,16 @@ class $AssetsImagesGen {
   List<AssetGenImage> get values => [loginIllustration];
 }
 
+class $AssetsJsonGen {
+  const $AssetsJsonGen();
+
+  /// File path: assets/json/card.json
+  String get card => 'assets/json/card.json';
+
+  /// List of all assets
+  List<String> get values => [card];
+}
+
 class $AssetsSocialMediaGen {
   const $AssetsSocialMediaGen();
 
@@ -114,6 +124,7 @@ class Assets {
   Assets._();
 
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsJsonGen json = $AssetsJsonGen();
   static const $AssetsSocialMediaGen socialMedia = $AssetsSocialMediaGen();
   static const $AssetsSvgGen svg = $AssetsSvgGen();
 }

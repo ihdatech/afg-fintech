@@ -1,31 +1,49 @@
+import 'package:fintech/config/fintech_theme_data.dart';
+import 'package:fintech/presentation/manager/cubit/auth/auth_cubit.dart';
+import 'package:fintech/presentation/manager/cubit/get_login/get_login_cubit.dart';
+import 'package:fintech/presentation/manager/cubit/get_products/get_products_cubit.dart';
+import 'package:fintech/presentation/manager/cubit/on_tap_bottom_navigation_bar/on_tap_bottom_navigation_bar_cubit.dart';
+import 'package:fintech/presentation/manager/cubit/post_register/post_register_cubit.dart';
+import 'package:fintech/presentation/pages/login_page.dart';
 import 'package:fintech/presentation/pages/main_page.dart';
 import 'package:fintech/config/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get/get.dart';
+import 'package:get_it/get_it.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class FintechApp extends StatelessWidget {
+  const FintechApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
+    return MultiBlocProvider(
+      providers: <BlocProvider>[
+        BlocProvider<GetLoginCubit>(create: (_) => GetIt.instance<GetLoginCubit>()),
+        BlocProvider<GetProductsCubit>(create: (_) => GetIt.instance<GetProductsCubit>()),
+        BlocProvider<AuthCubit>(create: (_) => GetIt.instance<AuthCubit>()),
+        BlocProvider<PostRegisterCubit>(create: (_) => GetIt.instance<PostRegisterCubit>()),
+        BlocProvider<OnTapBottomNavigationBarCubit>(create: (_) => OnTapBottomNavigationBarCubit()),
+      ],
+      child: MultiBlocListener(
+        listeners: <BlocListener>[
+          BlocListener<AuthCubit, AuthState>(
+            listener: (context, state) => state.maybeWhen(
+              success: (success) => BlocProvider.of<AuthCubit>(context).fetch(true.obs),
+              orElse: () => BlocProvider.of<AuthCubit>(context).fetch(true.obs),
+            ),
+          ),
+        ],
+        child: BlocBuilder<AuthCubit, AuthState>(
+          builder: (context, state) => MaterialApp(
+            title: 'Fintech',
+            theme: FintechThemeData.lightThemeData,
+            // darkTheme: FintechThemeData.darkThemeData,
+            initialRoute: Routes.initial,
+            routes: {Routes.initial: (context) => state.maybeWhen(success: (success) => const MainPage(), orElse: () => const LoginPage())},
+          ),
+        ),
       ),
-      initialRoute: Routes.initial,
-      routes: {
-        Routes.initial: (context) => const MainPage(),
-      },
     );
   }
 }

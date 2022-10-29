@@ -6,8 +6,8 @@ part 'login_queries.g.dart';
 @freezed
 abstract class LoginQueries with _$LoginQueries {
   factory LoginQueries({
-    required String email,
-    required String password,
+    String? email,
+    String? password,
   }) = _LoginQueries;
 
   factory LoginQueries.fromJson(Map<String, dynamic> json) => _$LoginQueriesFromJson(json);

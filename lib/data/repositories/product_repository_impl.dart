@@ -3,9 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:fintech/data/remote/data_sources/remote_data_source.dart';
 import 'package:fintech/data/remote/models/product_model.dart';
 import 'package:fintech/domain/repositories/product_repository.dart';
-import 'package:injectable/injectable.dart';
 
-@injectable
 class ProductRepositoryImpl implements ProductRepository {
   final RemoteDataSource _remoteDataSource;
 

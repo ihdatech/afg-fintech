@@ -4,12 +4,10 @@ import 'package:fintech/data/remote/models/register_model.dart';
 import 'package:fintech/domain/use_cases/post_register_usecases.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:injectable/injectable.dart';
 
 part 'post_register_state.dart';
 part 'post_register_cubit.freezed.dart';
 
-@injectable
 class PostRegisterCubit extends Cubit<PostRegisterState> {
   final PostRegisterUsecases _usecases;
 
