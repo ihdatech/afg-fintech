@@ -296,13 +296,6 @@
             </list>
           </value>
         </entry>
-        <entry key="get_it">
-          <value>
-            <list>
-              <option value="$PROJECT_DIR$/../../../.sdk/flutter/.pub-cache/hosted/pub.dartlang.org/get_it-7.2.0/lib" />
-            </list>
-          </value>
-        </entry>
         <entry key="glob">
           <value>
             <list>
@@ -780,7 +773,6 @@
       <root url="file://$PROJECT_DIR$/../../../.sdk/flutter/.pub-cache/hosted/pub.dartlang.org/freezed_annotation-2.2.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../.sdk/flutter/.pub-cache/hosted/pub.dartlang.org/frontend_server_client-3.1.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../.sdk/flutter/.pub-cache/hosted/pub.dartlang.org/get-4.6.5/lib" />
-      <root url="file://$PROJECT_DIR$/../../../.sdk/flutter/.pub-cache/hosted/pub.dartlang.org/get_it-7.2.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../.sdk/flutter/.pub-cache/hosted/pub.dartlang.org/glob-2.1.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../.sdk/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-3.0.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../.sdk/flutter/.pub-cache/hosted/pub.dartlang.org/graphs-2.2.0/lib" />

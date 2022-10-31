@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'on_tap_bottom_navigation_bar_cubit.dart';
+part of 'login_queries_cubit.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,23 +15,23 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$OnTapBottomNavigationBarState {
+mixin _$LoginQueriesState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(int success) success,
+    required TResult Function(LoginQueries success) success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(int success)? success,
+    TResult? Function(LoginQueries success)? success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(int success)? success,
+    TResult Function(LoginQueries success)? success,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -57,19 +57,16 @@ mixin _$OnTapBottomNavigationBarState {
 }
 
 /// @nodoc
-abstract class $OnTapBottomNavigationBarStateCopyWith<$Res> {
-  factory $OnTapBottomNavigationBarStateCopyWith(
-          OnTapBottomNavigationBarState value,
-          $Res Function(OnTapBottomNavigationBarState) then) =
-      _$OnTapBottomNavigationBarStateCopyWithImpl<$Res,
-          OnTapBottomNavigationBarState>;
+abstract class $LoginQueriesStateCopyWith<$Res> {
+  factory $LoginQueriesStateCopyWith(
+          LoginQueriesState value, $Res Function(LoginQueriesState) then) =
+      _$LoginQueriesStateCopyWithImpl<$Res, LoginQueriesState>;
 }
 
 /// @nodoc
-class _$OnTapBottomNavigationBarStateCopyWithImpl<$Res,
-        $Val extends OnTapBottomNavigationBarState>
-    implements $OnTapBottomNavigationBarStateCopyWith<$Res> {
-  _$OnTapBottomNavigationBarStateCopyWithImpl(this._value, this._then);
+class _$LoginQueriesStateCopyWithImpl<$Res, $Val extends LoginQueriesState>
+    implements $LoginQueriesStateCopyWith<$Res> {
+  _$LoginQueriesStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -86,7 +83,7 @@ abstract class _$$_InitialCopyWith<$Res> {
 
 /// @nodoc
 class __$$_InitialCopyWithImpl<$Res>
-    extends _$OnTapBottomNavigationBarStateCopyWithImpl<$Res, _$_Initial>
+    extends _$LoginQueriesStateCopyWithImpl<$Res, _$_Initial>
     implements _$$_InitialCopyWith<$Res> {
   __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
       : super(_value, _then);
@@ -99,7 +96,7 @@ class _$_Initial implements _Initial {
 
   @override
   String toString() {
-    return 'OnTapBottomNavigationBarState.initial()';
+    return 'LoginQueriesState.initial()';
   }
 
   @override
@@ -115,7 +112,7 @@ class _$_Initial implements _Initial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(int success) success,
+    required TResult Function(LoginQueries success) success,
   }) {
     return initial();
   }
@@ -124,7 +121,7 @@ class _$_Initial implements _Initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(int success)? success,
+    TResult? Function(LoginQueries success)? success,
   }) {
     return initial?.call();
   }
@@ -133,7 +130,7 @@ class _$_Initial implements _Initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(int success)? success,
+    TResult Function(LoginQueries success)? success,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -174,7 +171,7 @@ class _$_Initial implements _Initial {
   }
 }
 
-abstract class _Initial implements OnTapBottomNavigationBarState {
+abstract class _Initial implements LoginQueriesState {
   const factory _Initial() = _$_Initial;
 }
 
@@ -184,12 +181,14 @@ abstract class _$$_SuccessCopyWith<$Res> {
           _$_Success value, $Res Function(_$_Success) then) =
       __$$_SuccessCopyWithImpl<$Res>;
   @useResult
-  $Res call({int success});
+  $Res call({LoginQueries success});
+
+  $LoginQueriesCopyWith<$Res> get success;
 }
 
 /// @nodoc
 class __$$_SuccessCopyWithImpl<$Res>
-    extends _$OnTapBottomNavigationBarStateCopyWithImpl<$Res, _$_Success>
+    extends _$LoginQueriesStateCopyWithImpl<$Res, _$_Success>
     implements _$$_SuccessCopyWith<$Res> {
   __$$_SuccessCopyWithImpl(_$_Success _value, $Res Function(_$_Success) _then)
       : super(_value, _then);
@@ -203,8 +202,16 @@ class __$$_SuccessCopyWithImpl<$Res>
       null == success
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
-              as int,
+              as LoginQueries,
     ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $LoginQueriesCopyWith<$Res> get success {
+    return $LoginQueriesCopyWith<$Res>(_value.success, (value) {
+      return _then(_value.copyWith(success: value));
+    });
   }
 }
 
@@ -214,11 +221,11 @@ class _$_Success implements _Success {
   const _$_Success(this.success);
 
   @override
-  final int success;
+  final LoginQueries success;
 
   @override
   String toString() {
-    return 'OnTapBottomNavigationBarState.success(success: $success)';
+    return 'LoginQueriesState.success(success: $success)';
   }
 
   @override
@@ -242,7 +249,7 @@ class _$_Success implements _Success {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(int success) success,
+    required TResult Function(LoginQueries success) success,
   }) {
     return success(this.success);
   }
@@ -251,7 +258,7 @@ class _$_Success implements _Success {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(int success)? success,
+    TResult? Function(LoginQueries success)? success,
   }) {
     return success?.call(this.success);
   }
@@ -260,7 +267,7 @@ class _$_Success implements _Success {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(int success)? success,
+    TResult Function(LoginQueries success)? success,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -301,10 +308,10 @@ class _$_Success implements _Success {
   }
 }
 
-abstract class _Success implements OnTapBottomNavigationBarState {
-  const factory _Success(final int success) = _$_Success;
+abstract class _Success implements LoginQueriesState {
+  const factory _Success(final LoginQueries success) = _$_Success;
 
-  int get success;
+  LoginQueries get success;
   @JsonKey(ignore: true)
   _$$_SuccessCopyWith<_$_Success> get copyWith =>
       throw _privateConstructorUsedError;
