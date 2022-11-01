@@ -20,10 +20,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final OnChangedCheckboxController _onChangedCheckboxController = Get.find<OnChangedCheckboxController>();
-  final OnChangedEmailController _onChangedEmailController = Get.find<OnChangedEmailController>();
-  final OnChangedPasswordController _onChangedPasswordController = Get.find<OnChangedPasswordController>();
-
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
@@ -155,18 +151,19 @@ class _LoginPageState extends State<LoginPage> {
                         ],
                       ),
                     ),
-                    Obx(
-                      () => Padding(
+                    GetBuilder<OnChangedEmailController>(
+                      init: OnChangedEmailController(),
+                      builder: (controller) => Padding(
                         padding: const EdgeInsets.only(bottom: 16.0),
                         child: TextFormField(
-                          onChanged: (value) => _onChangedEmailController
+                          onChanged: (value) => Get.find<OnChangedEmailController>()
                             ..enterController(true)
                             ..emailController(value),
                           textInputAction: TextInputAction.next,
                           keyboardType: TextInputType.emailAddress,
                           decoration: InputDecoration(
                             hintText: 'Email Address',
-                            errorText: _onChangedEmailController.errorText,
+                            errorText: Get.find<OnChangedEmailController>().errorText,
                             prefixIcon: Padding(
                               padding: const EdgeInsets.only(right: 7.0),
                               child: Assets.svg.mail.svg(),
@@ -179,18 +176,19 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                     ),
-                    Obx(
-                      () => Padding(
+                    GetBuilder<OnChangedPasswordController>(
+                      init: OnChangedPasswordController(),
+                      builder: (controller) => Padding(
                         padding: const EdgeInsets.only(bottom: 32.0),
                         child: TextFormField(
-                          onChanged: (value) => _onChangedPasswordController
+                          onChanged: (value) => Get.find<OnChangedPasswordController>()
                             ..enterController(true)
                             ..passwordController(value),
                           textInputAction: TextInputAction.done,
                           keyboardType: TextInputType.visiblePassword,
                           decoration: InputDecoration(
                             hintText: 'Password',
-                            errorText: _onChangedPasswordController.errorText,
+                            errorText: Get.find<OnChangedPasswordController>().errorText,
                             prefixIcon: Padding(
                               padding: const EdgeInsets.only(right: 7.0),
                               child: Assets.svg.lock.svg(),
@@ -202,17 +200,17 @@ class _LoginPageState extends State<LoginPage> {
                             suffixIcon: IconButton(
                               splashRadius: 1,
                               padding: EdgeInsets.zero,
-                              onPressed: () => _onChangedPasswordController
+                              onPressed: () => Get.find<OnChangedPasswordController>()
                                 ..enterController(true)
                                 ..onPressed(),
-                              icon: SvgPicture.asset(_onChangedPasswordController.obscureIconController.value),
+                              icon: SvgPicture.asset(controller.obscureIconController.value),
                             ),
                             suffixIconConstraints: const BoxConstraints(
                               maxHeight: 24.0,
                               maxWidth: 33.0,
                             ),
                           ),
-                          obscureText: _onChangedPasswordController.obscureTextController.value,
+                          obscureText: controller.obscureTextController.value,
                           autocorrect: false,
                           enableSuggestions: false,
                         ),
@@ -225,13 +223,14 @@ class _LoginPageState extends State<LoginPage> {
                         children: <Widget>[
                           Row(
                             children: <Widget>[
-                              Obx(
-                                () => SizedBox(
+                              GetBuilder<OnChangedCheckboxController>(
+                                init: OnChangedCheckboxController(),
+                                builder: (controller) => SizedBox(
                                   width: 22.0,
                                   height: 22.0,
                                   child: Checkbox(
-                                    value: _onChangedCheckboxController.checkboxController.value,
-                                    onChanged: (value) => _onChangedCheckboxController.checkboxController(value),
+                                    value: controller.checkboxController.value,
+                                    onChanged: (value) => controller.checkboxController(value),
                                   ),
                                 ),
                               ),
@@ -258,21 +257,20 @@ class _LoginPageState extends State<LoginPage> {
                         ],
                       ),
                     ),
-                    Obx(
-                      () => Padding(
-                        padding: const EdgeInsets.only(bottom: 16.0),
-                        child: ElevatedButton(
-                          onPressed: GetUtils.isEmail(_onChangedEmailController.emailController.value) && GetUtils.isLengthBetween(_onChangedPasswordController.passwordController.value, 9, _onChangedPasswordController.passwordController.value.length)
-                              ? () => BlocProvider.of<GetLoginCubit>(context).fetch(LoginQueries(
-                                  email: _onChangedEmailController.emailController.value,
-                                  password: _onChangedPasswordController.passwordController.value,
-                                ))
-                              : null,
-                          child: Padding(
-                            padding: const EdgeInsets.only(top: 10.0, bottom: 9.0),
-                            child: Text(
-                              'Login',
-                              style: GoogleFonts.manrope(fontWeight: FontWeight.w400, fontSize: 19.15, color: const Color(0xFFFFFFFF)),
+                    GetBuilder<OnChangedEmailController>(
+                      init: OnChangedEmailController(),
+                      builder: (email) => GetBuilder<OnChangedPasswordController>(
+                        init: OnChangedPasswordController(),
+                        builder: (password) => Padding(
+                          padding: const EdgeInsets.only(bottom: 16.0),
+                          child: ElevatedButton(
+                            onPressed: GetUtils.isEmail(email.emailController.value) && GetUtils.isLengthBetween(password.passwordController.value, 9, password.passwordController.value.length) ? () => BlocProvider.of<GetLoginCubit>(context).fetch(LoginQueries(email: email.emailController.value, password: password.passwordController.value)) : null,
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 10.0, bottom: 9.0),
+                              child: Text(
+                                'Login',
+                                style: GoogleFonts.manrope(fontWeight: FontWeight.w400, fontSize: 19.15, color: const Color(0xFFFFFFFF)),
+                              ),
                             ),
                           ),
                         ),
