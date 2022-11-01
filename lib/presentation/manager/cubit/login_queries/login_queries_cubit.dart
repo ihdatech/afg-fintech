@@ -1,10 +1,9 @@
 import 'package:fintech/data/remote/models/login_queries.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-part 'login_queries_state.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'login_queries_cubit.freezed.dart';
+part 'login_queries_state.dart';
 
 class LoginQueriesCubit extends Cubit<LoginQueriesState> {
   LoginQueriesCubit() : super(const LoginQueriesState.initial());
