@@ -1,7 +1,10 @@
 # afg-fintech
 AFG Fintech
 
-https://plugins.jetbrains.com/plugin/13470-clean-architecture-for-flutter
-flutter clean; flutter pub get;
-flutter clean; flutter pub get; flutter pub run build_runner build;
-flutter clean; flutter pub get; flutter pub run build_runner build --delete-conflicting-outputs;
+AFG Fintech is a project that introduces clean architecture and project structure approaches to developing Flutter apps.
+
+## Documentation
+
+- [Clean Architecture](https://plugins.jetbrains.com/plugin/13470-clean-architecture-for-flutter)
+- [Cubit](https://pub.dev/packages/flutter_bloc)
+- [GetX](https://pub.dev/packages/get)
