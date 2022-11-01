@@ -2,11 +2,11 @@ import 'package:dartz/dartz.dart';
 import 'package:fintech/data/remote/models/login_model.dart';
 import 'package:fintech/data/remote/models/login_queries.dart';
 import 'package:fintech/domain/use_cases/get_login_usecases.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'get_login_state.dart';
 part 'get_login_cubit.freezed.dart';
+part 'get_login_state.dart';
 
 class GetLoginCubit extends Cubit<GetLoginState> {
   final GetLoginUseCases _usecases;

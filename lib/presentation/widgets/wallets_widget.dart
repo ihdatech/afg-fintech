@@ -51,6 +51,13 @@ class WalletsWidget extends StatelessWidget {
                   margin: const EdgeInsets.only(right: 16.0),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5.0),
+                    boxShadow: <BoxShadow>[
+                      BoxShadow(
+                        color: index == 0 ? Colors.blue : Colors.blueGrey.withOpacity(0.1),
+                        offset: const Offset(1.1, 1.1),
+                        blurRadius: 10.0,
+                      ),
+                    ],
                     color: index == 0 ? Colors.blue : Colors.blueGrey.withOpacity(0.1),
                   ),
                   child: Column(
@@ -113,6 +120,13 @@ class WalletsWidget extends StatelessWidget {
                                     width: 1.0,
                                   ),
                                 ),
+                                boxShadow: <BoxShadow>[
+                                  BoxShadow(
+                                    color: Colors.blueGrey.withOpacity(0.1),
+                                    offset: const Offset(1.1, 1.1),
+                                    blurRadius: 10.0,
+                                  ),
+                                ],
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,

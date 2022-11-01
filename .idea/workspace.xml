@@ -10,29 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6fa9f3c-edf5-4a53-bca4-6f9648f2b3bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/card.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/card.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/config/fintech_config.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/config/fintech_config.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/domain/use_cases/get_login_usecases.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/use_cases/get_login_usecases.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_login/get_login_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_login/get_login_cubit.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/on_changed_email/on_changed_email_cubit.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/on_changed_email/on_changed_email_cubit.freezed.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/on_changed_email/on_changed_email_state.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/on_changed_password/on_changed_password_cubit.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/on_changed_password/on_changed_password_cubit.freezed.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/on_changed_password/on_changed_password_state.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/on_tap_bottom_navigation_bar/on_tap_bottom_navigation_bar_cubit.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/on_tap_bottom_navigation_bar/on_tap_bottom_navigation_bar_cubit.freezed.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/on_tap_bottom_navigation_bar/on_tap_bottom_navigation_bar_state.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/validate_login/validate_login_cubit.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/validate_login/validate_login_cubit.freezed.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/validate_login/validate_login_state.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/pages/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/pages/login_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/pages/main_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +58,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/presentation/manager/getx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flutter-ukur" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>

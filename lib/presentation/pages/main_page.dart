@@ -14,12 +14,23 @@ class MainPage extends StatefulWidget {
   State<MainPage> createState() => _MainPageState();
 }
 
-class _MainPageState extends State<MainPage> {
+class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
+  late AnimationController _animationController;
 
   @override
   void initState() {
     super.initState();
     BlocProvider.of<GetProductsCubit>(context).fetch();
+    _animationController = AnimationController(
+      duration: const Duration(milliseconds: 600),
+      vsync: this,
+    );
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
   }
 
   @override
@@ -28,9 +39,14 @@ class _MainPageState extends State<MainPage> {
       init: OnTapBottomNavigationBarController(),
       builder: (controller) => Scaffold(
         body: <Widget>[
-          const HomeWidget(),
+          HomeWidget(
+            animationController: AnimationController(
+              duration: const Duration(milliseconds: 600),
+              vsync: this,
+            ),
+          ),
           const WalletsWidget(),
-          const HomeWidget(),
+          const WalletsWidget(),
           const WalletsWidget(),
         ].elementAt(controller.indexController.value),
         bottomNavigationBar: BottomNavigationBar(
