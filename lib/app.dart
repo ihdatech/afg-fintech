@@ -28,7 +28,9 @@ class FintechApp extends StatelessWidget {
           theme: FintechThemeData.lightThemeData,
           darkTheme: FintechThemeData.darkThemeData,
           initialRoute: Routes.initial,
-          routes: {Routes.initial: (context) => state.maybeWhen(success: (success) => const MainPage(), orElse: () => const LoginPage())},
+          routes: {
+            Routes.initial: (context) => state.maybeWhen(success: (success) => const MainPage(), orElse: () => const LoginPage()),
+          },
         ),
       ),
     );

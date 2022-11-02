@@ -1,0 +1,20 @@
+{
+  "spending": [
+    {
+      "type": "Weekly Spend",
+      "balance": 1454
+    },
+    {
+      "type": "Shopping",
+      "balance": 890
+    },
+    {
+      "type": "Others",
+      "balance": 1240
+    }
+  ],
+  "income": {
+    "type": "Weekly Income",
+    "balance": 564
+  }
+}

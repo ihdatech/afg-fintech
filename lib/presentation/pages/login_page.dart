@@ -63,7 +63,8 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                         color: const Color(0xEA0386D0),
                       ),
-                      child: Assets.svg.fingerprint.svg(
+                      child: SvgPicture.asset(
+                        Assets.svg.fingerprint,
                         height: 57.0,
                         width: 55.0,
                       ),
@@ -166,7 +167,7 @@ class _LoginPageState extends State<LoginPage> {
                             errorText: Get.find<OnChangedEmailController>().errorText,
                             prefixIcon: Padding(
                               padding: const EdgeInsets.only(right: 7.0),
-                              child: Assets.svg.mail.svg(),
+                              child: SvgPicture.asset(Assets.svg.mail),
                             ),
                             prefixIconConstraints: const BoxConstraints(
                               maxHeight: 24.0,
@@ -191,7 +192,7 @@ class _LoginPageState extends State<LoginPage> {
                             errorText: Get.find<OnChangedPasswordController>().errorText,
                             prefixIcon: Padding(
                               padding: const EdgeInsets.only(right: 7.0),
-                              child: Assets.svg.lock.svg(),
+                              child: SvgPicture.asset(Assets.svg.lock),
                             ),
                             prefixIconConstraints: const BoxConstraints(
                               maxHeight: 24.0,
@@ -295,17 +296,17 @@ class _LoginPageState extends State<LoginPage> {
                         children: <Widget>[
                           Padding(
                             padding: const EdgeInsets.only(right: 18.0),
-                            child: Assets.socialMedia.facebook.svg(),
+                            child: SvgPicture.asset(Assets.socialMedia.facebook),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 18.0),
-                            child: Assets.socialMedia.instagram.svg(),
+                            child: SvgPicture.asset(Assets.socialMedia.instagram),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 18.0),
-                            child: Assets.socialMedia.pinterest.svg(),
+                            child: SvgPicture.asset(Assets.socialMedia.pinterest),
                           ),
-                          Assets.socialMedia.linkedin.svg(),
+                          SvgPicture.asset(Assets.socialMedia.linkedin),
                         ],
                       ),
                     ),

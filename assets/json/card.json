@@ -1,29 +1,29 @@
 [
   {
     "logo": "assets/svg/mastercard.svg",
-    "card_type": "Physical ebl card",
-    "card_number": 4012888888881881,
+    "type": "Physical ebl card",
+    "number": 4012888888881881,
     "balance": 2960,
     "exp": "2029-12-01"
   },
   {
     "logo": "assets/svg/visa.svg",
-    "card_type": "Virtual ebl card",
-    "card_number": 4012888888881881,
+    "type": "Virtual ebl card",
+    "number": 4012888888881881,
     "balance": 1280,
     "exp": "2028-12-01"
   },
   {
     "logo": "assets/svg/amex.svg",
-    "card_type": "Amex",
-    "card_number": 374245455400126,
+    "type": "Amex",
+    "number": 374245455400126,
     "balance": 1240,
     "exp": "2027-01-01"
   },
   {
     "logo": "assets/svg/union_pay.svg",
-    "card_type": "China Union Pay",
-    "card_number": 8171999927660000,
+    "type": "China Union Pay",
+    "number": 8171999927660000,
     "balance": 1280,
     "exp": "2026-01-01"
   }

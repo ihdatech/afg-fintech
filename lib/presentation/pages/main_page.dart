@@ -1,10 +1,11 @@
 import 'package:fintech/presentation/manager/assets/assets.gen.dart';
-import 'package:fintech/presentation/manager/cubit/get_products/get_products_cubit.dart';
+import 'package:fintech/presentation/manager/getx/get_cards_controller.dart';
+import 'package:fintech/presentation/manager/getx/get_spending_controller.dart';
 import 'package:fintech/presentation/manager/getx/on_tap_bottom_navigation_bar_controller.dart';
 import 'package:fintech/presentation/widgets/home_widget.dart';
 import 'package:fintech/presentation/widgets/wallets_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 class MainPage extends StatefulWidget {
@@ -20,7 +21,9 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    BlocProvider.of<GetProductsCubit>(context).fetch();
+    Get.find<GetCardsController>().fetch();
+    Get.find<GetSpendingController>().fetch();
+    // BlocProvider.of<GetProductsCubit>(context).fetch();
     _animationController = AnimationController(
       duration: const Duration(milliseconds: 600),
       vsync: this,
@@ -48,24 +51,25 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
           const WalletsWidget(),
           const WalletsWidget(),
           const WalletsWidget(),
+          const WalletsWidget(),
         ].elementAt(controller.indexController.value),
         bottomNavigationBar: BottomNavigationBar(
           onTap: Get.find<OnTapBottomNavigationBarController>().onTap,
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Assets.svg.home.svg(),
+              icon: SvgPicture.asset(Assets.svg.home),
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Assets.svg.wallet.svg(),
+              icon: SvgPicture.asset(Assets.svg.wallet),
               label: 'wallet',
             ),
             BottomNavigationBarItem(
-              icon: Assets.svg.gift.svg(),
+              icon: SvgPicture.asset(Assets.svg.gift),
               label: 'Gift',
             ),
             BottomNavigationBarItem(
-              icon: Assets.svg.profile.svg(),
+              icon: SvgPicture.asset(Assets.svg.profile),
               label: 'Profile',
             ),
           ],

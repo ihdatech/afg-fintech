@@ -6,5 +6,4 @@ class GetProductsState with _$GetProductsState {
   const factory GetProductsState.loading() = _Loading;
   const factory GetProductsState.failure(String failure) = _Failure;
   const factory GetProductsState.success(List<ProductModel> success) = _Success;
-
 }

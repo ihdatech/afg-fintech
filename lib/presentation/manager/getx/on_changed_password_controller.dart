@@ -6,7 +6,7 @@ class OnChangedPasswordController extends GetxController {
   final Rx<bool> enterController = Rx<bool>(false);
   final Rx<bool> validateController = Rx<bool>(false);
   final Rx<bool> obscureTextController = Rx<bool>(true);
-  final Rx<String> obscureIconController = Rx<String>(Assets.svg.hide.path);
+  final Rx<String> obscureIconController = Rx<String>(Assets.svg.hide);
 
   String? get errorText {
     if (enterController.value) {
@@ -25,10 +25,10 @@ class OnChangedPasswordController extends GetxController {
   void onPressed() {
     if (obscureTextController.value) {
       obscureTextController(false);
-      obscureIconController(Assets.svg.show.path);
+      obscureIconController(Assets.svg.show);
     } else {
       obscureTextController(true);
-      obscureIconController(Assets.svg.hide.path);
+      obscureIconController(Assets.svg.hide);
     }
   }
 }

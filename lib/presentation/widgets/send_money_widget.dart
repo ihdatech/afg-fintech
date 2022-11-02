@@ -2,6 +2,7 @@ import 'package:fintech/presentation/manager/assets/assets.gen.dart';
 import 'package:fintech/presentation/manager/cubit/get_products/get_products_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SendMoneyWidget extends StatelessWidget {
@@ -68,7 +69,10 @@ class SendMoneyWidget extends StatelessWidget {
                     padding: MaterialStateProperty.all(const EdgeInsets.all(10.0)),
                     textStyle: MaterialStateProperty.all(GoogleFonts.manrope(fontWeight: FontWeight.w600, fontSize: 12.0)),
                   ),
-                  icon: Assets.svg.visa.svg(color: index == 0 ? null : Colors.black54),
+                  icon: SvgPicture.asset(
+                    Assets.svg.visa,
+                    color: index == 0 ? null : Colors.black54,
+                  ),
                   label: const Text(r'Physical ebl card'),
                 ),
               ),
@@ -107,7 +111,7 @@ class SendMoneyWidget extends StatelessWidget {
                     color: const Color(0xEA999EA1),
                   ),
                 ),
-                Assets.svg.securitySafe.svg(),
+                SvgPicture.asset(Assets.svg.securitySafe),
               ],
             ),
           ),
@@ -173,7 +177,7 @@ class SendMoneyWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                Assets.svg.moneySendIlustration.svg(),
+                SvgPicture.asset(Assets.svg.moneySendIlustration),
               ],
             ),
           ),

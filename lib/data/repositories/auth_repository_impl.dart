@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:fintech/data/remote/data_sources/remote_data_source.dart';
+import 'package:fintech/data/remote/data_sources/auth_remote_data_source.dart';
 import 'package:fintech/data/remote/models/login_model.dart';
 import 'package:fintech/data/remote/models/login_queries.dart';
 import 'package:fintech/data/remote/models/register_body.dart';
@@ -9,7 +9,7 @@ import 'package:fintech/domain/repositories/auth_repository.dart';
 import 'package:get/get.dart';
 
 class AuthRepositoryImpl implements AuthRepository {
-  final RemoteDataSource _remoteDataSource;
+  final AuthRemoteDataSource _remoteDataSource;
 
   AuthRepositoryImpl(this._remoteDataSource);
 

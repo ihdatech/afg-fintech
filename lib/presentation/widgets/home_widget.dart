@@ -3,6 +3,7 @@ import 'package:fintech/presentation/manager/cubit/get_products/get_products_cub
 import 'package:fintech/presentation/widgets/send_money_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
@@ -93,7 +94,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                             borderRadius: BorderRadius.circular(25.0),
                             color: const Color(0xEAF5F5F8),
                           ),
-                          child: Assets.svg.defaultPerson.svg(),
+                          child: SvgPicture.asset(Assets.svg.defaultPerson),
                         ),
                         Text(
                           r'Good day,Zesan',
@@ -116,7 +117,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                         onPressed: () {},
                         backgroundColor: const Color(0xEAD1ECFF),
                         elevation: 0.0,
-                        child: Assets.svg.search.svg(
+                        child: SvgPicture.asset(Assets.svg.search,
                           height: 19.0 - 6.0 * _topBarOpacity,
                           width: 19.0 - 6.0 * _topBarOpacity,
                         ),
@@ -183,7 +184,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                           backgroundColor: MaterialStateProperty.all(const Color(0xEAF2F3F3)),
                           elevation: MaterialStateProperty.all(0.0),
                         ),
-                        icon: Assets.svg.moneySend.svg(),
+                        icon: SvgPicture.asset(Assets.svg.moneySend),
                         label: Text(
                           r'Send',
                           textAlign: TextAlign.start,
@@ -204,7 +205,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                         style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all(const Color(0xEAF2F3F3)),
                         ),
-                        icon: Assets.svg.moneyRecive.svg(),
+                        icon: SvgPicture.asset(Assets.svg.moneyRecive),
                         label: Text(
                           r'Receive',
                           textAlign: TextAlign.start,
@@ -224,7 +225,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                         backgroundColor: MaterialStateProperty.all(const Color(0xEAF2F3F3)),
                         elevation: MaterialStateProperty.all(0.0),
                       ),
-                      icon: Assets.svg.award.svg(),
+                      icon: SvgPicture.asset(Assets.svg.award),
                       label: Text(
                         r'Rewards',
                         textAlign: TextAlign.start,

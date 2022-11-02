@@ -8,8 +8,6 @@
 // ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal
 
 import 'package:flutter/widgets.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter/services.dart';
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
@@ -27,97 +25,103 @@ class $AssetsJsonGen {
   /// File path: assets/json/card.json
   String get card => 'assets/json/card.json';
 
+  /// File path: assets/json/spending.json
+  String get spending => 'assets/json/spending.json';
+
   /// List of all assets
-  List<String> get values => [card];
+  List<String> get values => [card, spending];
 }
 
 class $AssetsSocialMediaGen {
   const $AssetsSocialMediaGen();
 
   /// File path: assets/social_media/facebook.svg
-  SvgGenImage get facebook => const SvgGenImage('assets/social_media/facebook.svg');
+  String get facebook => 'assets/social_media/facebook.svg';
 
   /// File path: assets/social_media/instagram.svg
-  SvgGenImage get instagram => const SvgGenImage('assets/social_media/instagram.svg');
+  String get instagram => 'assets/social_media/instagram.svg';
 
   /// File path: assets/social_media/linkedin.svg
-  SvgGenImage get linkedin => const SvgGenImage('assets/social_media/linkedin.svg');
+  String get linkedin => 'assets/social_media/linkedin.svg';
 
   /// File path: assets/social_media/pinterest.svg
-  SvgGenImage get pinterest => const SvgGenImage('assets/social_media/pinterest.svg');
+  String get pinterest => 'assets/social_media/pinterest.svg';
 
   /// List of all assets
-  List<SvgGenImage> get values => [facebook, instagram, linkedin, pinterest];
+  List<String> get values => [facebook, instagram, linkedin, pinterest];
 }
 
 class $AssetsSvgGen {
   const $AssetsSvgGen();
 
   /// File path: assets/svg/add.svg
-  SvgGenImage get add => const SvgGenImage('assets/svg/add.svg');
+  String get add => 'assets/svg/add.svg';
 
   /// File path: assets/svg/amex.svg
-  SvgGenImage get amex => const SvgGenImage('assets/svg/amex.svg');
+  String get amex => 'assets/svg/amex.svg';
 
   /// File path: assets/svg/award.svg
-  SvgGenImage get award => const SvgGenImage('assets/svg/award.svg');
+  String get award => 'assets/svg/award.svg';
 
   /// File path: assets/svg/default_person.svg
-  SvgGenImage get defaultPerson => const SvgGenImage('assets/svg/default_person.svg');
+  String get defaultPerson => 'assets/svg/default_person.svg';
 
   /// File path: assets/svg/fingerprint.svg
-  SvgGenImage get fingerprint => const SvgGenImage('assets/svg/fingerprint.svg');
+  String get fingerprint => 'assets/svg/fingerprint.svg';
 
   /// File path: assets/svg/gift.svg
-  SvgGenImage get gift => const SvgGenImage('assets/svg/gift.svg');
+  String get gift => 'assets/svg/gift.svg';
 
   /// File path: assets/svg/hide.svg
-  SvgGenImage get hide => const SvgGenImage('assets/svg/hide.svg');
+  String get hide => 'assets/svg/hide.svg';
 
   /// File path: assets/svg/home.svg
-  SvgGenImage get home => const SvgGenImage('assets/svg/home.svg');
+  String get home => 'assets/svg/home.svg';
 
   /// File path: assets/svg/lock.svg
-  SvgGenImage get lock => const SvgGenImage('assets/svg/lock.svg');
+  String get lock => 'assets/svg/lock.svg';
 
   /// File path: assets/svg/mail.svg
-  SvgGenImage get mail => const SvgGenImage('assets/svg/mail.svg');
+  String get mail => 'assets/svg/mail.svg';
 
   /// File path: assets/svg/mastercard.svg
-  SvgGenImage get mastercard => const SvgGenImage('assets/svg/mastercard.svg');
+  String get mastercard => 'assets/svg/mastercard.svg';
 
   /// File path: assets/svg/money-recive.svg
-  SvgGenImage get moneyRecive => const SvgGenImage('assets/svg/money-recive.svg');
+  String get moneyRecive => 'assets/svg/money-recive.svg';
 
   /// File path: assets/svg/money-send-ilustration.svg
-  SvgGenImage get moneySendIlustration => const SvgGenImage('assets/svg/money-send-ilustration.svg');
+  String get moneySendIlustration => 'assets/svg/money-send-ilustration.svg';
 
   /// File path: assets/svg/money-send.svg
-  SvgGenImage get moneySend => const SvgGenImage('assets/svg/money-send.svg');
+  String get moneySend => 'assets/svg/money-send.svg';
 
   /// File path: assets/svg/more_circle.svg
-  SvgGenImage get moreCircle => const SvgGenImage('assets/svg/more_circle.svg');
+  String get moreCircle => 'assets/svg/more_circle.svg';
 
   /// File path: assets/svg/profile.svg
-  SvgGenImage get profile => const SvgGenImage('assets/svg/profile.svg');
+  String get profile => 'assets/svg/profile.svg';
 
   /// File path: assets/svg/search.svg
-  SvgGenImage get search => const SvgGenImage('assets/svg/search.svg');
+  String get search => 'assets/svg/search.svg';
 
   /// File path: assets/svg/security_safe.svg
-  SvgGenImage get securitySafe => const SvgGenImage('assets/svg/security_safe.svg');
+  String get securitySafe => 'assets/svg/security_safe.svg';
 
   /// File path: assets/svg/show.svg
-  SvgGenImage get show => const SvgGenImage('assets/svg/show.svg');
+  String get show => 'assets/svg/show.svg';
+
+  /// File path: assets/svg/union_pay.svg
+  String get unionPay => 'assets/svg/union_pay.svg';
 
   /// File path: assets/svg/visa.svg
-  SvgGenImage get visa => const SvgGenImage('assets/svg/visa.svg');
+  String get visa => 'assets/svg/visa.svg';
 
   /// File path: assets/svg/wallet.svg
-  SvgGenImage get wallet => const SvgGenImage('assets/svg/wallet.svg');
+  String get wallet => 'assets/svg/wallet.svg';
 
   /// List of all assets
-  List<SvgGenImage> get values => [add, amex, award, defaultPerson, fingerprint, gift, hide, home, lock, mail, mastercard, moneyRecive, moneySendIlustration, moneySend, moreCircle, profile, search, securitySafe, show, visa, wallet];
+  List<String> get values => [add, amex, award, defaultPerson, fingerprint, gift, hide, home, lock, mail, mastercard, moneyRecive, moneySendIlustration, moneySend, moreCircle, profile, search, securitySafe, show, unionPay, visa, wallet];
 }
 
 class Assets {
@@ -192,53 +196,4 @@ class AssetGenImage {
   String get path => _assetName;
 
   String get keyName => _assetName;
-}
-
-class SvgGenImage {
-  const SvgGenImage(this._assetName);
-
-  final String _assetName;
-
-  SvgPicture svg({
-    Key? key,
-    bool matchTextDirection = false,
-    AssetBundle? bundle,
-    String? package,
-    double? width,
-    double? height,
-    BoxFit fit = BoxFit.contain,
-    AlignmentGeometry alignment = Alignment.center,
-    bool allowDrawingOutsideViewBox = false,
-    WidgetBuilder? placeholderBuilder,
-    Color? color,
-    BlendMode colorBlendMode = BlendMode.srcIn,
-    String? semanticsLabel,
-    bool excludeFromSemantics = false,
-    Clip clipBehavior = Clip.hardEdge,
-    bool cacheColorFilter = false,
-    SvgTheme? theme,
-  }) {
-    return SvgPicture.asset(
-      _assetName,
-      key: key,
-      matchTextDirection: matchTextDirection,
-      bundle: bundle,
-      package: package,
-      width: width,
-      height: height,
-      fit: fit,
-      alignment: alignment,
-      allowDrawingOutsideViewBox: allowDrawingOutsideViewBox,
-      placeholderBuilder: placeholderBuilder,
-      color: color,
-      colorBlendMode: colorBlendMode,
-      semanticsLabel: semanticsLabel,
-      excludeFromSemantics: excludeFromSemantics,
-      clipBehavior: clipBehavior,
-      cacheColorFilter: cacheColorFilter,
-      theme: theme,
-    );
-  }
-
-  String get path => _assetName;
 }

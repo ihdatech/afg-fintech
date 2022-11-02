@@ -7,4 +7,3 @@ Future<void> main() async {
   FintechConfig.instance.injection();
   runApp(const FintechApp());
 }
-

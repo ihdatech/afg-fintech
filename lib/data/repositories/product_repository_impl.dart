@@ -1,11 +1,11 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:fintech/data/remote/data_sources/remote_data_source.dart';
+import 'package:fintech/data/remote/data_sources/product_remote_data_source.dart';
 import 'package:fintech/data/remote/models/product_model.dart';
 import 'package:fintech/domain/repositories/product_repository.dart';
 
 class ProductRepositoryImpl implements ProductRepository {
-  final RemoteDataSource _remoteDataSource;
+  final ProductRemoteDataSource _remoteDataSource;
 
   ProductRepositoryImpl(this._remoteDataSource);
 
