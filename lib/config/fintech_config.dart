@@ -20,6 +20,7 @@ import 'package:fintech/presentation/manager/cubit/get_login/get_login_cubit.dar
 import 'package:fintech/presentation/manager/cubit/get_products/get_products_cubit.dart';
 import 'package:fintech/presentation/manager/cubit/post_register/post_register_cubit.dart';
 import 'package:fintech/presentation/manager/getx/get_cards_controller.dart';
+import 'package:fintech/presentation/manager/getx/get_login_controller.dart';
 import 'package:fintech/presentation/manager/getx/get_spending_controller.dart';
 import 'package:fintech/presentation/manager/getx/on_changed_checkbox_controller.dart';
 import 'package:fintech/presentation/manager/getx/on_changed_email_controller.dart';
@@ -42,13 +43,14 @@ class FintechConfig {
 
     Get.lazyPut<IsAuthUsecases>(() => IsAuthUsecases(Get.find()));
     Get.lazyPut<GetCardsUsecases>(() => GetCardsUsecases(Get.find()));
-    Get.lazyPut<GetLoginUseCases>(() => GetLoginUseCases(Get.find()));
+    Get.lazyPut<GetLoginUsecases>(() => GetLoginUsecases(Get.find()));
     Get.lazyPut<PostRegisterUsecases>(() => PostRegisterUsecases(Get.find()));
     Get.lazyPut<GetProductsUsecases>(() => GetProductsUsecases(Get.find()));
     Get.lazyPut<GetSpendingUsecases>(() => GetSpendingUsecases(Get.find()));
 
     Get.lazyPut<AuthCubit>(() => AuthCubit(Get.find()));
     Get.lazyPut<GetCardsController>(() => GetCardsController(Get.find()));
+    Get.lazyPut<GetLoginController>(() => GetLoginController(Get.find()));
     Get.lazyPut<GetSpendingController>(() => GetSpendingController(Get.find()));
     Get.lazyPut<GetLoginCubit>(() => GetLoginCubit(Get.find()));
     Get.lazyPut<GetProductsCubit>(() => GetProductsCubit(Get.find()));

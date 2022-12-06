@@ -25,11 +25,14 @@ class $AssetsJsonGen {
   /// File path: assets/json/card.json
   String get card => 'assets/json/card.json';
 
+  /// File path: assets/json/login.json
+  String get login => 'assets/json/login.json';
+
   /// File path: assets/json/spending.json
   String get spending => 'assets/json/spending.json';
 
   /// List of all assets
-  List<String> get values => [card, spending];
+  List<String> get values => [card, login, spending];
 }
 
 class $AssetsSocialMediaGen {
@@ -75,8 +78,11 @@ class $AssetsSvgGen {
   /// File path: assets/svg/hide.svg
   String get hide => 'assets/svg/hide.svg';
 
-  /// File path: assets/svg/home.svg
-  String get home => 'assets/svg/home.svg';
+  /// File path: assets/svg/home-filled.svg
+  String get homeFilled => 'assets/svg/home-filled.svg';
+
+  /// File path: assets/svg/home-outline.svg
+  String get homeOutline => 'assets/svg/home-outline.svg';
 
   /// File path: assets/svg/lock.svg
   String get lock => 'assets/svg/lock.svg';
@@ -117,11 +123,14 @@ class $AssetsSvgGen {
   /// File path: assets/svg/visa.svg
   String get visa => 'assets/svg/visa.svg';
 
-  /// File path: assets/svg/wallet.svg
-  String get wallet => 'assets/svg/wallet.svg';
+  /// File path: assets/svg/wallet-filled.svg
+  String get walletFilled => 'assets/svg/wallet-filled.svg';
+
+  /// File path: assets/svg/wallet-outline.svg
+  String get walletOutline => 'assets/svg/wallet-outline.svg';
 
   /// List of all assets
-  List<String> get values => [add, amex, award, defaultPerson, fingerprint, gift, hide, home, lock, mail, mastercard, moneyRecive, moneySendIlustration, moneySend, moreCircle, profile, search, securitySafe, show, unionPay, visa, wallet];
+  List<String> get values => [add, amex, award, defaultPerson, fingerprint, gift, hide, homeFilled, homeOutline, lock, mail, mastercard, moneyRecive, moneySendIlustration, moneySend, moreCircle, profile, search, securitySafe, show, unionPay, visa, walletFilled, walletOutline];
 }
 
 class Assets {

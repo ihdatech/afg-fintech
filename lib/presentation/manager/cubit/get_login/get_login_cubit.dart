@@ -9,7 +9,7 @@ part 'get_login_cubit.freezed.dart';
 part 'get_login_state.dart';
 
 class GetLoginCubit extends Cubit<GetLoginState> {
-  final GetLoginUseCases _usecases;
+  final GetLoginUsecases _usecases;
 
   GetLoginCubit(this._usecases) : super(const GetLoginState.initial());
 

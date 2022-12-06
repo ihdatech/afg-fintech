@@ -4,6 +4,7 @@ import 'package:fintech/presentation/manager/cubit/auth/auth_cubit.dart';
 import 'package:fintech/presentation/manager/cubit/get_login/get_login_cubit.dart';
 import 'package:fintech/presentation/manager/cubit/get_products/get_products_cubit.dart';
 import 'package:fintech/presentation/manager/cubit/post_register/post_register_cubit.dart';
+import 'package:fintech/presentation/manager/getx/get_login_controller.dart';
 import 'package:fintech/presentation/pages/login_page.dart';
 import 'package:fintech/presentation/pages/main_page.dart';
 import 'package:flutter/material.dart';
@@ -22,14 +23,14 @@ class FintechApp extends StatelessWidget {
         BlocProvider<AuthCubit>(create: (_) => Get.find<AuthCubit>()),
         BlocProvider<PostRegisterCubit>(create: (_) => Get.find<PostRegisterCubit>()),
       ],
-      child: BlocBuilder<AuthCubit, AuthState>(
-        builder: (context, state) => MaterialApp(
+      child: GetBuilder<GetLoginController>(
+        builder: (controller) => MaterialApp(
           title: 'Fintech',
           theme: FintechThemeData.lightThemeData,
           darkTheme: FintechThemeData.darkThemeData,
           initialRoute: Routes.initial,
           routes: {
-            Routes.initial: (context) => state.maybeWhen(success: (success) => const MainPage(), orElse: () => const LoginPage()),
+            Routes.initial: (context) => controller.successController.value ? const MainPage() : const LoginPage(),
           },
         ),
       ),

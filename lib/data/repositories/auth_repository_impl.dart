@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:fintech/data/remote/data_sources/auth_remote_data_source.dart';
@@ -6,6 +8,8 @@ import 'package:fintech/data/remote/models/login_queries.dart';
 import 'package:fintech/data/remote/models/register_body.dart';
 import 'package:fintech/data/remote/models/register_model.dart';
 import 'package:fintech/domain/repositories/auth_repository.dart';
+import 'package:fintech/presentation/manager/assets/assets.gen.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
 class AuthRepositoryImpl implements AuthRepository {
@@ -21,7 +25,8 @@ class AuthRepositoryImpl implements AuthRepository {
   @override
   Future<Either<String, LoginModel>> getLogin(LoginQueries queries) async {
     try {
-      LoginModel result = await _remoteDataSource.getLogin(queries);
+      // LoginModel result = await _remoteDataSource.getLogin(queries);
+      LoginModel result = LoginModel.fromJson(json.decode(await rootBundle.loadString(Assets.json.spending)));
       if (result.message == 'success') return Right(result);
       return Left(result.message);
     } on DioError catch (e) {

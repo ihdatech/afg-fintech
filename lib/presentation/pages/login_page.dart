@@ -3,6 +3,7 @@ import 'package:fintech/presentation/manager/assets/assets.gen.dart';
 import 'package:fintech/presentation/manager/cubit/get_login/get_login_cubit.dart';
 import 'package:fintech/presentation/manager/cubit/login_queries/login_queries_cubit.dart';
 import 'package:fintech/presentation/manager/cubit/obscure_text/obscure_text_cubit.dart';
+import 'package:fintech/presentation/manager/getx/get_login_controller.dart';
 import 'package:fintech/presentation/manager/getx/on_changed_checkbox_controller.dart';
 import 'package:fintech/presentation/manager/getx/on_changed_email_controller.dart';
 import 'package:fintech/presentation/manager/getx/on_changed_password_controller.dart';
@@ -152,7 +153,7 @@ class _LoginPageState extends State<LoginPage> {
                         ],
                       ),
                     ),
-                    GetBuilder<OnChangedEmailController>(
+                    GetX<OnChangedEmailController>(
                       init: OnChangedEmailController(),
                       builder: (controller) => Padding(
                         padding: const EdgeInsets.only(bottom: 16.0),
@@ -164,7 +165,7 @@ class _LoginPageState extends State<LoginPage> {
                           keyboardType: TextInputType.emailAddress,
                           decoration: InputDecoration(
                             hintText: 'Email Address',
-                            errorText: Get.find<OnChangedEmailController>().errorText,
+                            errorText: controller.errorText,
                             prefixIcon: Padding(
                               padding: const EdgeInsets.only(right: 7.0),
                               child: SvgPicture.asset(Assets.svg.mail),
@@ -177,7 +178,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                     ),
-                    GetBuilder<OnChangedPasswordController>(
+                    GetX<OnChangedPasswordController>(
                       init: OnChangedPasswordController(),
                       builder: (controller) => Padding(
                         padding: const EdgeInsets.only(bottom: 32.0),
@@ -224,7 +225,7 @@ class _LoginPageState extends State<LoginPage> {
                         children: <Widget>[
                           Row(
                             children: <Widget>[
-                              GetBuilder<OnChangedCheckboxController>(
+                              GetX<OnChangedCheckboxController>(
                                 init: OnChangedCheckboxController(),
                                 builder: (controller) => SizedBox(
                                   width: 22.0,
@@ -258,14 +259,15 @@ class _LoginPageState extends State<LoginPage> {
                         ],
                       ),
                     ),
-                    GetBuilder<OnChangedEmailController>(
-                      init: OnChangedEmailController(),
+                    GetBuilder<GetLoginController>(
                       builder: (email) => GetBuilder<OnChangedPasswordController>(
                         init: OnChangedPasswordController(),
                         builder: (password) => Padding(
                           padding: const EdgeInsets.only(bottom: 16.0),
                           child: ElevatedButton(
-                            onPressed: GetUtils.isEmail(email.emailController.value) && GetUtils.isLengthBetween(password.passwordController.value, 9, password.passwordController.value.length) ? () => BlocProvider.of<GetLoginCubit>(context).fetch(LoginQueries(email: email.emailController.value, password: password.passwordController.value)) : null,
+                            onPressed: GetUtils.isEmail(email.emailController.value) && GetUtils.isLengthBetween(password.passwordController.value, 9, password.passwordController.value.length)
+                                ? () => Get.find<GetLoginController>().fetch()
+                                : null,
                             child: Padding(
                               padding: const EdgeInsets.only(top: 10.0, bottom: 9.0),
                               child: Text(

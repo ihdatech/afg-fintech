@@ -11,37 +11,21 @@
   <component name="ChangeListManager">
     <list default="true" id="e6fa9f3c-edf5-4a53-bca4-6f9648f2b3bb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/card.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/card.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/home.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/svg/home-filled.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/svg/home.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/svg/home-outline.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/svg/wallet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/svg/wallet-outline.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/wallet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/svg/wallet-filled.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/config/fintech_config.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/config/fintech_config.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/remote/data_sources/remote_data_source.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/remote/data_sources/remote_data_source.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/remote/data_sources/remote_dio.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/remote/models/login_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/remote/models/login_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/remote/models/login_queries.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/remote/models/login_queries.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/remote/models/register_body.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/remote/models/register_body.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data/repositories/auth_repository_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/repositories/auth_repository_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/repositories/product_repository_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/repositories/product_repository_impl.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/domain/use_cases/get_login_usecases.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/use_cases/get_login_usecases.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/domain/use_cases/get_products_usecases.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/use_cases/get_products_usecases.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/domain/use_cases/is_auth_usecases.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/use_cases/is_auth_usecases.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/domain/use_cases/post_register_usecases.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/use_cases/post_register_usecases.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/presentation/manager/assets/assets.gen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/assets/assets.gen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/auth/auth_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/auth/auth_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_login/get_login_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_login/get_login_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_products/get_products_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_products/get_products_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/obscure_text/obscure_text_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/obscure_text/obscure_text_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/post_register/post_register_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/post_register/post_register_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/getx/on_changed_password_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/getx/on_changed_password_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_login/get_login_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/cubit/get_login/get_login_cubit.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/manager/getx/on_changed_email_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/manager/getx/on_changed_email_controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/presentation/pages/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/pages/login_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/presentation/pages/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/pages/main_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/widgets/home_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/widgets/home_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/widgets/send_money_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/widgets/send_money_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/widgets/wallets_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/widgets/wallets_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,24 +74,24 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last.edited.regexp" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/presentation/manager/getx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\.github\ihdatech\afg-fintech\lib\data\local\models" />
       <recent name="C:\.github\ihdatech\afg-fintech\lib\presentation\manager\getx" />
+      <recent name="C:\.github\ihdatech\afg-fintech\assets\json" />
       <recent name="C:\.github\ihdatech\afg-fintech\lib\domain\use_cases" />
       <recent name="C:\.github\ihdatech\afg-fintech\lib\data\remote\models" />
-      <recent name="C:\.github\ihdatech\afg-fintech\assets\json" />
-      <recent name="C:\.github\ihdatech\afg-fintech\bin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\.github\ihdatech\afg-fintech\assets\svg" />
       <recent name="C:\.github\ihdatech\afg-fintech\lib\data\remote\data_sources" />
       <recent name="C:\.github\ihdatech\afg-fintech\lib\presentation\manager\getx" />
       <recent name="C:\.github\ihdatech\afg-fintech\lib\presentation\manager\cubit\validate_login" />
       <recent name="C:\.github\ihdatech\afg-fintech\lib\presentation\manager\cubit\get_products" />
-      <recent name="C:\.github\ihdatech\afg-fintech\lib\presentation\manager\cubit\get_login" />
     </key>
   </component>
   <component name="RunManager" selected="Flutter.main.dart">

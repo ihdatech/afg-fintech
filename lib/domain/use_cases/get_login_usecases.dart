@@ -3,13 +3,13 @@ import 'package:fintech/data/remote/models/login_model.dart';
 import 'package:fintech/data/remote/models/login_queries.dart';
 import 'package:fintech/domain/repositories/auth_repository.dart';
 
-class GetLoginUseCases {
+class GetLoginUsecases {
   final Future<Either<String, LoginModel>> Function(LoginQueries queries) execute;
 
-  GetLoginUseCases._({required this.execute});
+  GetLoginUsecases._({required this.execute});
 
-  factory GetLoginUseCases(AuthRepository repository) {
+  factory GetLoginUsecases(AuthRepository repository) {
     Future<Either<String, LoginModel>> execute(LoginQueries queries) => repository.getLogin(queries);
-    return GetLoginUseCases._(execute: (queries) => execute(queries));
+    return GetLoginUsecases._(execute: (queries) => execute(queries));
   }
 }

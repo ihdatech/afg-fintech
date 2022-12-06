@@ -57,11 +57,13 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
           onTap: Get.find<OnTapBottomNavigationBarController>().onTap,
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(Assets.svg.home),
+              activeIcon: SvgPicture.asset(Assets.svg.homeFilled),
+              icon: SvgPicture.asset(Assets.svg.homeOutline),
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(Assets.svg.wallet),
+              activeIcon: SvgPicture.asset(Assets.svg.walletFilled),
+              icon: SvgPicture.asset(Assets.svg.walletOutline),
               label: 'wallet',
             ),
             BottomNavigationBarItem(
